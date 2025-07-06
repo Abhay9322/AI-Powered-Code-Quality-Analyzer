@@ -1,4 +1,4 @@
-# 🤖 AI Code Review Tool – MERN Stack Project
+# 🤖  AI-Powered Code Quality Analyzer – MERN Stack Project
 
 An **AI-powered Code Review Platform** built with the **MERN stack**, designed to help developers write better code with real-time analysis, performance feedback, security suggestions, and speech-based reviews.
 
