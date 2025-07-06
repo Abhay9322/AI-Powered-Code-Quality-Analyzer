@@ -8,7 +8,7 @@ const Navbar = ({ setSidebarOpen, darkMode, setDarkMode }) => {
         <FaBars />
       </button>
       <h1 className="text-2xl font-extrabold neon-text glow-text tracking-wide">
-        ⚡ AI Code Review Tool
+        ⚡ AI-Powered Code Quality Analyzer
       </h1>
       <button onClick={() => setDarkMode(!darkMode)} className="p-2 rounded-lg bg-gradient-to-r from-gray-700 to-gray-800 hover:from-cyan-500 hover:to-blue-600 transition text-white">
         {darkMode ? <FaSun /> : <FaMoon />}
