@@ -29,7 +29,7 @@ function App() {
 
       <motion.div className="p-5 pt-28 w-full max-w-6xl mx-auto">
         <h1 className="text-5xl font-extrabold text-cyan-400 text-center mb-8 uppercase drop-shadow-lg animate-pulse">
-          🚀 AI CODE REVIEW TOOL
+          🚀 AI-Powered-Code-Quality-Analyzer
         </h1>
 
         <div className="glassmorphism p-5 rounded-xl shadow-lg border border-cyan-500 backdrop-blur-md">
