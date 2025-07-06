@@ -1,6 +1,6 @@
 # 🤖  AI-Powered Code Quality Analyzer – MERN Stack Project
 
-An **AI-powered Code Review Platform** built with the **MERN stack**, designed to help developers write better code with real-time analysis, performance feedback, security suggestions, and speech-based reviews.
+An **AI-Powered-Code-Quality-Analyzer** built with the **MERN stack**, designed to help developers write better code with real-time analysis, performance feedback, security suggestions, and speech-based reviews.
 
 > 💡 Designed for industry-level code collaboration, review automation, and enhanced developer productivity.
 
@@ -76,5 +76,5 @@ An **AI-powered Code Review Platform** built with the **MERN stack**, designed t
 
 ### 1️⃣ Clone the Repository
 ```bash
-git clone https://github.com/ChandraPrakashSingh00/AI-Code-Review-Features-Mern-Stack-Project.git
-cd AI-Code-Review-Features-Mern-Stack-Project
+git clone https://https://github.com/Abhay9322/AI-Powered-Code-Quality-Analyzer
+cd AI-Powered-Code-Quality-Analyzer
