@@ -1,49 +1,46 @@
 import React from "react";
 import {
-  FaTimes,
-  FaMicrophone,
-  FaVolumeUp,
-  FaCompress,
-  FaExpand,
-  FaShieldAlt,
-  FaBolt,
-  FaCode,
+  FaTimes, FaMicrophone, FaVolumeUp, FaCompress,
+  FaExpand, FaShieldAlt, FaBolt, FaCode
 } from "react-icons/fa";
 
 const Sidebar = ({ setSidebarOpen, handleAIRequest }) => {
+  const actions = [
+    { icon: <FaCode />, label: "Code Review", color: "from-purple-500 to-pink-500", type: "code-review" },
+    { icon: <FaMicrophone />, label: "Speak", color: "from-blue-500 to-indigo-700", type: "speak-review" },
+    { icon: <FaVolumeUp />, label: "Humanize", color: "from-indigo-500 to-purple-600", type: "humanize-speech" },
+    { icon: <FaCompress />, label: "Shorten", color: "from-orange-500 to-red-500", type: "shorten-review" },
+    { icon: <FaExpand />, label: "Expand", color: "from-green-500 to-teal-600", type: "elongate-review" },
+    { icon: <FaShieldAlt />, label: "Security Check", color: "from-red-600 to-rose-500", type: "security-check" },
+    { icon: <FaBolt />, label: "Performance Boost", color: "from-yellow-500 to-green-500", type: "performance-boost" },
+  ];
+
   return (
-    <div className="fixed top-0 left-0 h-full w-72 bg-gradient-to-b from-[#0f0f0f80] to-[#1a1a1a80] backdrop-blur-xl border-r border-[#ffffff20] shadow-[0_0_20px_#00f2ff50] z-50 p-5 rounded-r-3xl animate-slideIn">
-      
+    <div className="fixed top-0 left-0 h-full w-72 z-50 p-6 bg-[#0f0f0f]/90 backdrop-blur-2xl border-r border-cyan-500/30 shadow-[inset_0_0_10px_#00f2ff40] rounded-r-3xl animate-slideIn overflow-y-auto">
       {/* Close Button */}
       <button
-        className="absolute top-5 right-5 text-3xl text-gray-300 hover:text-red-500 transition-all duration-300"
         onClick={() => setSidebarOpen(false)}
+        className="absolute top-4 right-4 text-2xl text-white hover:text-red-400 transition-all duration-300"
+        aria-label="Close Sidebar"
       >
         <FaTimes />
       </button>
 
       {/* Title */}
-      <h2 className="text-3xl font-extrabold mb-8 text-center text-cyan-400 tracking-wider glow-text">
-        ⚙️ AI Lab
+      <h2 className="text-3xl font-extrabold text-center text-cyan-400 mb-10 tracking-wide drop-shadow-glow">
+        ⚙️ AI Toolbox
       </h2>
 
-      {/* AI Buttons */}
+      {/* AI Feature Buttons */}
       <div className="flex flex-col gap-4">
-        {[
-          { icon: <FaCode />, label: "Code Review", color: "from-pink-500 to-purple-700", type: "code-review" },
-          { icon: <FaMicrophone />, label: "Speak", color: "from-blue-500 to-blue-800", type: "speak-review" },
-          { icon: <FaVolumeUp />, label: "Humanize", color: "from-purple-500 to-indigo-700", type: "humanize-speech" },
-          { icon: <FaCompress />, label: "Shorten", color: "from-orange-500 to-red-600", type: "shorten-review" },
-          { icon: <FaExpand />, label: "Expand", color: "from-green-500 to-teal-700", type: "elongate-review" },
-          { icon: <FaShieldAlt />, label: "Security Check", color: "from-red-500 to-rose-700", type: "security-check" },
-          { icon: <FaBolt />, label: "Performance Boost", color: "from-yellow-500 to-green-600", type: "performance-boost" },
-        ].map((item, index) => (
+        {actions.map((btn, index) => (
           <button
             key={index}
-            onClick={() => handleAIRequest(item.type, "text")}
-            className={`bg-gradient-to-r ${item.color} p-3 rounded-xl flex items-center gap-3 text-white text-lg font-medium hover:scale-105 hover:shadow-[0_0_20px_#00f2ff80] transition-all duration-300`}
+            onClick={() => handleAIRequest(btn.type, "text")}
+            className={`bg-gradient-to-r ${btn.color} py-3 px-4 rounded-2xl flex items-center gap-4 text-white text-base font-semibold shadow-lg transition-all duration-300 hover:scale-105 hover:shadow-[0_0_20px_#00f2ff80]`}
           >
-            {item.icon} {item.label}
+            <span className="text-xl">{btn.icon}</span>
+            <span>{btn.label}</span>
           </button>
         ))}
       </div>
