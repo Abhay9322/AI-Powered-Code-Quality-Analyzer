@@ -7,10 +7,10 @@ An **AI-Powered-Code-Quality-Analyzer** built with the **MERN stack**, designed 
 ---
 
 *Homepage*
-![homepage](./images/AICode1.png)
+![homepage](./images/AICodeM.png)
 
 *Workspace*
-![workspace](./images/AICodeM1.png)
+![workspace](./images/AICode1.png)
 
 
 -- Replace with actual image path -->
