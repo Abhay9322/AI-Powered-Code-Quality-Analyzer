@@ -6,8 +6,14 @@ An **AI-Powered-Code-Quality-Analyzer** built with the **MERN stack**, designed 
 
 ---
 
-![AI Code Review Screenshot](![AI Features Code Project Imgaes](https://github.com/user-attachments/assets/68c9f060-c889-436c-a1d8-954d353c3a71)
-) <!-- Replace with actual image path -->
+*Homepage*
+![homepage](./images/AICode1.png)
+
+*Workspace*
+![workspace](./images/AICodeM1.png)
+
+
+-- Replace with actual image path -->
 
 ---
 
